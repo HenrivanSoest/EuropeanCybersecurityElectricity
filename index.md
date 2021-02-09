@@ -1,7 +1,7 @@
 ## European Policy and Regulation for Cybersecurity in the Electricity System
 
 <iframe src="Test_graph.html"
-    sandbox="allow-same-origin allow-scripts"
+    sandbox=""
     width="100%"
     height="500"
     scrolling="no"
