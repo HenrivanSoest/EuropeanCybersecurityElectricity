@@ -1,7 +1,7 @@
 from bokeh.io import output_notebook, show, save
 from bokeh.models import Range1d, Circle, ColumnDataSource, MultiLine, EdgesAndLinkedNodes, NodesAndLinkedEdges, \
     LabelSet
-from bokeh.plotting import figure, from_networkx
+from bokeh.plotting import figure, from_networkx, output_file
 from bokeh.palettes import Blues8, Reds8, Purples8, Oranges8, Viridis8, Spectral8
 from bokeh.transform import linear_cmap
 from networkx.algorithms import community
@@ -79,3 +79,6 @@ plot.renderers.append(labels)
 # display graph
 
 show(plot)
+
+output_file(r'file:///C:/Users/Henri%20van%20Soest/Documents/GitHub/EuropeanCybersecurityElectricity/Test_graph.html')
+
