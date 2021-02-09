@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## European Policy and Regulation for Cybersecurity in the Electricity System
 
 You can use the [editor on GitHub](https://github.com/HenrivanSoest/EuropeanCybersecurityElectricity/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
