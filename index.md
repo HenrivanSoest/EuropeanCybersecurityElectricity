@@ -1,7 +1,7 @@
 ## European Policy and Regulation for Cybersecurity in the Electricity System
 
-<iframe src="https://github.com/HenrivanSoest/EuropeanCybersecurityElectricity/blob/gh-pages/Test_graph.html"
-    sandbox=""
+<iframe src="/blob/gh-pages/Test_graph.html"
+    sandbox="allow-same-origin allow-scripts"
     width="100%"
     height="500"
     scrolling="no"
