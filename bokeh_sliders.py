@@ -54,6 +54,10 @@ edge_highlight_color = 'black'
 size_by_this_attribute = 'adjusted_node_size'
 color_by_this_attribute = 'modularity_color'
 
+# sliders setup
+
+
+
 # setup plot
 
 color_palette = Blues8
