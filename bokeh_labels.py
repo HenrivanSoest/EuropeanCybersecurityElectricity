@@ -1,3 +1,8 @@
+import networkx as nx
+import pandas as pd
+import matplotlib.pyplot as plt
+import numpy as np
+
 from bokeh.io import output_notebook, show, save
 from bokeh.models import Range1d, Circle, ColumnDataSource, MultiLine, EdgesAndLinkedNodes, NodesAndLinkedEdges, \
     LabelSet
@@ -5,6 +10,17 @@ from bokeh.plotting import figure, from_networkx
 from bokeh.palettes import Blues8, Reds8, Purples8, Oranges8, Viridis8, Spectral8
 from bokeh.transform import linear_cmap
 from networkx.algorithms import community
+
+# networkxgraph
+
+pd.set_option('max_rows', 400)
+
+got_df = pd.read_csv(r'C:\Users\Henri van Soest\Documents\PhD\Writing\Year 3 Writeup\4 Framework\Framework_Timeline2.csv')
+
+G = nx.from_pandas_edgelist(got_df, 'Source', 'Target', 'Area')
+
+nx.write_graphml(G, 'GOT-network.graphml')
+#nx.draw(G, with_labels=True, node_color='skyblue', width=.3, font_size=8)
 
 # degrees
 
@@ -26,8 +42,11 @@ for community_number, community in enumerate(communities):
     for name in community:
         modularity_class[name] = community_number
         modularity_color[name] = Spectral8[community_number]
+        
+nx.set_node_attributes(G, modularity_class, 'modularity_class')
+nx.set_node_attributes(G, modularity_color, 'modularity_color')
 
-# highlighting
+# node and edge layout
 
 node_highlight_color = 'white'
 edge_highlight_color = 'black'
