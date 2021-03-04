@@ -297,5 +297,3 @@ def display_click_data(clickData):
 
 if __name__ == '__main__':
     app.run_server(debug=False)
-
-output_file(r'file:///C:/Users/Henri%20van%20Soest/Documents/GitHub/EuropeanCybersecurityElectricity/Dash_Test.html')
